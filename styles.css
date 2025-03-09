@@ -1,0 +1,224 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar */
+/* Side Panel */
+.side-panel {
+    height: 100%;
+    width: 0; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0; /* Slide panel in from the left */
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    transition: 0.3s; /* Smooth open/close animation */
+    padding-top: 60px;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.side-panel .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 25px; /* Close button aligned with the left */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+.side-panel-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.side-panel-links li {
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.side-panel-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+}
+
+.side-panel-links a:hover {
+    background-color: #d3d3d3; /* Highlight on hover */
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+
+/* Sidebar Links */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px; /* Increased font size */
+    padding: 20px 0; /* Increased padding */
+    transition: background 0.3s;
+}
+
+nav a:hover, 
+nav a.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding-left: 20px; /* Increased padding */
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    background-color: #8B6F75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%; /* Adjust for fixed sidebar */
+}
+
+/* Pet Profile */
+.pet-profile {
+    text-align: center;
+    color: white;
+    font-size: 30px; /* Increased font size */
+}
+
+.pet-circle {
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Increased space */
+}
+
+.pet-profile a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Increased font size */
+    display: block;
+    margin-top: 20px; /* Increased space */
+}
+
+.pet-profile a:hover {
+    text-decoration: underline;
+}
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #D3D3D3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top-right-radius: 30px;
+    height: 100vh; /* Ensure it fills the height */
+    position: fixed; /* Sticks to the left */
+    left: 0;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profile-circle {
+    width: 70px; /* Increased size */
+    height: 70px; /* Increased size */
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px; /* Increased space */
+}
+
+/* Sidebar Links */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px; /* Increased font size */
+    padding: 20px 0; /* Increased padding */
+    transition: background 0.3s;
+}
+
+nav a:hover, 
+nav a.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding-left: 20px; /* Increased padding */
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    background-color: #8B6F75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%; /* Adjust for fixed sidebar */
+}
+
+/* Pet Profile */
+.pet-profile {
+    text-align: center;
+    color: white;
+    font-size: 30px; /* Increased font size */
+}
+
+.pet-circle {
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Increased space */
+}
+
+.pet-profile a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Increased font size */
+    display: block;
+    margin-top: 20px; /* Increased space */
+}
+
+.pet-profile a:hover {
+    text-decoration: underline;
+}

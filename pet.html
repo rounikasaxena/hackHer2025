@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Profile</title>
+    <link rel="stylesheet" href="pet.css">
+</head>
+
+<body>
+    <!-- Side Panel -->
+    <div id="side-panel" class="side-panel">
+        <button class="close-btn" onclick="toggleSidePanel()">✖</button>
+        <ul class="side-panel-links">
+            <li><a href="dashboard.html">Dashboard</a></li> <!-- Link to Dashboard -->
+            <li><a href="editpet.html" class="active">Your Pet</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="intropage.html">Sign Out</a></li> <!-- Link to Login Page -->
+        </ul>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-profile" onclick="toggleSidePanel()">
+                <img src="profile-picture.jpg" alt="Profile Picture" class="profile-pic"> <!-- Profile Picture -->
+            </div>
+            <div class="nav-title">Pet Profile</div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="pet-profile">
+                <img src="pet-selection.png" alt="Pet Options" class="centered-image">
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

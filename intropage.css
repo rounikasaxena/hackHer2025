@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8B6F75;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo Circle */
+.logo-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Title */
+
+.nav-logo {
+    width: 150px; /* Adjust size of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #8B6F75;
+    margin-bottom: 40px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #8B6F75;
+    border-radius: 5px;
+    background: transparent;
+    color: #8B6F75;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ddd;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+    background-color: #8B6F75;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #ddd;
+}
+
+/* Circles and Oval */
+.circle {
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.circle1 {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 10%;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    left: 5%;
+}
+
+.circle3 {
+    width: 100px;
+    height: 100px;
+    bottom: 15%;
+    right: 10%;
+}
+
+.oval {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    background-color: #D3D3D3;
+    border-radius: 50px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* GIF Container Styling */
+.gif-container {
+    display: flex;
+    justify-content: center; /* Center the GIFs horizontally */
+    align-items: center;
+    gap: 10px; /* Space between GIFs */
+    position: fixed; /* Stick to the bottom of the page */
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100%; /* Full width across the page */
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+/* Individual GIF Styling */
+.looping-gif {
+    width: 200px; /* Adjust the GIF size */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.white-box {
+    background-color: #fff; /* White background */
+    width: 400px; /* Width of the box */
+    padding: 30px;
+    margin: 20px; /* Center the box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensures content and GIFs are spaced */
+    position: relative;
+    min-height: 500px; /* Adjust height to fit form and GIFs */
+}

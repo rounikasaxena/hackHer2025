@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #d7e0ff;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures proper spacing */
+    padding: 10px 20px;
+    background-color: #9D8189;
+    color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Profile Picture (on the left) */
+.nav-profile {
+    order: 1; /* Ensure it's positioned first */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px; /* Adds spacing between profile pic and other content */
+}
+
+.nav-title {
+    flex: 1; /* Take up remaining space to allow centering */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove extra margins */
+    order: 2; /* Position it after the profile picture */
+}
+
+/* Side Panel */
+.side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0; /* Position the panel on the left instead of the right */
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    transition: 0.3s; /* Smooth transition */
+    padding-top: 60px;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3); /* Add a shadow on the right side */
+}
+
+.side-panel .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 25px; /* Move the close button to the left */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+.side-panel-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.side-panel-links li {
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.side-panel-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+}
+
+
+/* Pet Profile */
+.pet-profile {
+    text-align: center;
+    color: white;
+    font-size: 30px; /* Increased font size */
+}
+
+.pet-circle {
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Increased space */
+}
+
+.pet-profile a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Increased font size */
+    display: block;
+    margin-top: 20px; /* Increased space */
+}
+
+.pet-profile a:hover {
+    text-decoration: underline;
+}
+
+/* Center the image in the Pet Profile Page */
+.main-content {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Full height to center properly */
+}
+
+.centered-image {
+    width: 1200px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain the aspect ratio of the image */
+}

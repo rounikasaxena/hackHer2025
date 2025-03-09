@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawmodoro Login</title>
+    <link rel="stylesheet" href="intropage.css">
+</head>
+<body>
+    <!-- White Box Container -->
+    <div class="white-box">
+        <img src="logo.png" alt="Logo" class="nav-logo"> <!-- Add your logo image path -->
+        <div class="title">Pawmodoro</div>
+        <form id="login-form">
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" class="submit-button" onclick="redirectToDashboard()">Continue</button>
+        </form>
+    </div>
+
+     <!-- GIF Container -->
+     <div class="gif-container">
+        <img src="bunny_idle.gif" alt="Fun GIF 1" class="looping-gif">
+        <img src="cat_idle.gif" alt="Fun GIF 2" class="looping-gif">
+        <img src="dog_idle.gif" alt="Fun GIF 3" class="looping-gif">
+    </div>
+
+    <script>
+        function redirectToDashboard() {
+            window.location.href = "dashboard.html"; // Redirect to Dashboard
+        }
+    </script>
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

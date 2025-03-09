@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawmodoro | Focus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="timer-message">Please select a timer before starting.</div>
+
+    <nav class="navbar">
+        <div class="nav-profile" onclick="toggleSidePanel()">
+            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="nav-title">Pawmodoro</div>
+    </nav>    
+
+    <div id="side-panel" class="side-panel">
+        <button class="close-btn" onclick="toggleSidePanel()">✖</button>
+        <ul class="side-panel-links">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="pet.html">Your Pet</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="intropage.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <div class="bento-container">
+        <div class="todo-container notebook">
+            <h2>To-Do List</h2>
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-todo">Add</button>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div class="timer">
+            <h1>Pawmodoro</h1>
+            <div class="timer-container">
+                <div class="button-container">
+                    <button class="button" id="pomodoro-session">Pomodoro</button>
+                    <button class="button" id="short-break">Short Break</button>
+                    <button class="button" id="long-break">Long Break</button>
+                </div>
+                <main>
+                    <div class="pomodoro">
+                        <div id="pomodoro-timer" class="timer-display" data-duration="25.00">
+                            <h1 class="time">25:00</h1>
+                        </div>
+                        <div id="short-timer" class="timer-display" data-duration="5.00">
+                            <h1 class="time">5:00</h1>
+                        </div>
+                        <div id="long-timer" class="timer-display" data-duration="10.00">
+                            <h1 class="time">10:00</h1>
+                        </div>
+                    </div>
+                </main>
+                <div class="buttons">
+                    <button id="start">▶</button>
+                    <button id="stop">||</button>
+                    <button id="restart">↻</button>
+                </div>
+            </div>
+        </div>
+
+        <iframe style="border-radius:12px; position: fixed; bottom: 50px; right: 60px; width: 1200px; height: 412px;" 
+            src="https://open.spotify.com/embed/playlist/7JoNtrnxFZsj7gXjT5IeZz?utm_source=generator" 
+            frameborder="0" allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+    </div>
+
+    <script src="script.js"></script>
+    <img src="friends.png" alt="Decorative Image" class="bottom-left-image">
+    <img src="bunny_sleeping.gif" alt="Sleeping Bunny" class="top-right-gif" id="sleepingBunny">
+<img src="bunny_idle.gif" alt="Idle Bunny" class="top-right-gif" id="idleBunny" style="display: none;">
+<img src="bunny_cheer.gif" alt="Cheering Bunny" class="top-right-gif" id="cheerBunny" style="display: none;">
+</body>
+</html>
